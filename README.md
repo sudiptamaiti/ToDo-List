@@ -62,9 +62,9 @@ This app is deployed for free using **Render**.
 ## 📸 Screenshots
 (Add your own screenshots here)  
 Example:  
-  !(C:\Users\sudip\OneDrive\Desktop\webdev\MY_PROJECTS\ToDo_List\public\screenshots\Screenshot 2025-08-28 145515.png)
+  !(https://github.com/sudiptamaiti/ToDo-List/blob/main/public/screenshots/Screenshot%202025-08-28%20145515.png)
 
-  !(C:\Users\sudip\OneDrive\Desktop\webdev\MY_PROJECTS\ToDo_List\public\screenshots\Screenshot 2025-08-28 145948.png) 
+  !(https://github.com/sudiptamaiti/ToDo-List/blob/main/public/screenshots/Screenshot%202025-08-28%20145948.png) 
 
 ---
 

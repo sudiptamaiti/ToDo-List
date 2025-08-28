@@ -1,5 +1,16 @@
 <%- include('partials/header.ejs'); -%>
 
+<form action="/logout" method="POST" style="position:fixed; top:20px; right:20px; z-index:1000;">
+  <button 
+    type="submit" 
+    style="background: #dc2626; color:white; padding:8px 16px; border:none; border-radius:8px; cursor:pointer; font-weight:bold;"
+    onmouseover="this.style.background='#b91c1c'"
+    onmouseout="this.style.background='#dc2626'"
+  >
+    Log Out
+  </button>
+</form>
+
   <div class="box" id="heading">
     <h1>
       <%= listTitle %>

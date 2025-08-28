@@ -12,17 +12,17 @@ dotenv.config();
 
 //Creating the express app
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const saltRounds = 10;
 
 //Connecting to Database
-const db = new pg.Client({
-    user: process.env.DB_USER,
-    host: process.env.DB_HOST,
-    database: process.env.DB_DATABASE,
-    password: process.env.DB_PASS,
-    port: process.env.DB_PORT,
-});
+const db = new pg.Pool({
+  connectionString: process.env.DB_URL,
+  ssl: {
+    require: true,
+    rejectUnauthorized: false
+  }
+})
 db.connect();
 
 //Body parsing and declaring static files
@@ -246,6 +246,6 @@ passport.deserializeUser((user, cb)=>{
     cb(null, user);
 })
 
-app.listen(PORT, ()=>{
+app.listen(PORT, "0.0.0.0", ()=>{
     console.log(`Server is Listening on http://localhost:${PORT} `)
 })

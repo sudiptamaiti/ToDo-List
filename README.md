@@ -59,8 +59,7 @@ This app is deployed for free using **Render**.
 
 ---
 
-## 📸 Screenshots
-(Add your own screenshots here)  
+## 📸 Screenshots  
 Example:  
   ![Sign Up Page](https://github.com/sudiptamaiti/ToDo-List/blob/main/public/screenshots/Screenshot%202025-08-28%20145515.png?raw=true)
 
